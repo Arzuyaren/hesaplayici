@@ -1,0 +1,119 @@
+/* Sayfa Genel Ayarları */
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Arka Plan Renk Geçişi (Lila - Lavanta) */
+body {
+    background: linear-gradient(135deg, #e6d7ff 0%, #c8b6ff 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Ana Kart Tasarımı */
+.kart {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(157, 126, 219, 0.25);
+    width: 100%;
+    max-width: 420px;
+}
+
+h1 {
+    color: #4a3e6d;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Girdi Kutuları ve Yazıları */
+.girdi-grubu {
+    margin-bottom: 14px;
+}
+
+.girdi-grubu label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6c5b7b;
+    margin-bottom: 5px;
+}
+
+.girdi-grubu input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #faf8ff;
+}
+
+/* Kutuya tıklanınca mor çizgi olması */
+.girdi-grubu input:focus {
+    border-color: #a084dc;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(160, 132, 220, 0.3);
+}
+
+/* Lila Hesapla Butonu */
+#hesaplaBtn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #b388ff 0%, #8c52ff 100%);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 6px 16px rgba(140, 82, 255, 0.35);
+    transition: transform 0.1s ease;
+}
+
+#hesaplaBtn:active {
+    transform: scale(0.98);
+}
+
+/* Sonuc Kartı Alanı */
+.sonuc-kutusu {
+    margin-top: 24px;
+    background: #f4efff;
+    padding: 18px;
+    border-radius: 16px;
+    border: 1px solid #e2d5ff;
+}
+
+.sonuc-kutusu h2 {
+    font-size: 16px;
+    color: #4a3e6d;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.sonuc-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sonuc-eleman {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #5c4b75;
+}
+
+.sonuc-eleman strong {
+    color: #7c4dff;
+    font-weight: bold;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performans Hesaplayici</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="kart">
+        <h1>Performans Hesaplayici</h1>
+
+        <div class="girdi-grubu">
+            <label>Bugünkü Şiş Sayisi</label>
+            <input type="number" id="bugunSis" placeholder="Bugünkü Şiş Sayisi">
+        </div>
+
+        <div class="girdi-grubu">
+            <label>Duble Sayisi</label>
+            <input type="number" id="duble" placeholder="Duble Sayisi">
+        </div>
+
+        <div class="girdi-grubu">
+            <label>Geçen Haftanin Şiş Sayisi</label>
+            <input type="number" id="gecenHafta" placeholder="Geçen Haftanin Şiş Sayisi">
+        </div>
+
+        <div class="girdi-grubu">
+            <label>Geçen Senenin Şiş Sayisi</label>
+            <input type="number" id="gecenSene" placeholder="Geçen Senenin Şiş Sayisi">
+        </div>
+
+        <div class="girdi-grubu">
+            <label>Günlük Ciro Toplami (₺)</label>
+            <input type="number" id="ciro" placeholder="Günlük Ciro Toplami (₺)">
+        </div>
+
+        <button id="hesaplaBtn">HESAPLA</button>
+
+        <div class="sonuc-kutusu">
+            <h2>Sonuçlar</h2>
+            <div class="sonuc-grid">
+                <div class="sonuc-eleman">
+                    <span>Duble Ortalamasi:</span>
+                    <strong id="r1">% --</strong>
+                </div>
+                <div class="sonuc-eleman">
+                    <span>Geçen Hafta ile Fark:</span>
+                    <strong id="r2">% --</strong>
+                </div>
+                <div class="sonuc-eleman">
+                    <span>Geçen Sene ile Fark:</span>
+                    <strong id="r3">% --</strong>
+                </div>
+                <div class="sonuc-eleman">
+                    <span>Kişi Sayi Ortalamasi:</span>
+                    <strong id="r4">-- </strong>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
